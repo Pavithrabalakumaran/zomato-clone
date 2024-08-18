@@ -249,6 +249,22 @@ h2 {
     padding-bottom: 5px;
 }
 
+.popular{
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color:#1f1a1ac2;
+    margin-bottom: 3px;
+    font-family: "Okra, Helvetica, sans-serif";
+    margin: 50px;
+    text-align: center
+}
+
+.span-chennai {
+    color: black;
+}
+
+
 
  
 
