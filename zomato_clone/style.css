@@ -2,7 +2,8 @@ body{
     padding: 0;
     margin: 0;
     text-decoration: none;
-
+    width: 100vw;
+    height: 100vh;
 }
 
 header{
@@ -17,6 +18,8 @@ header{
     position:absolute;
     top: -20vh;
     z-index: -5;
+    width: 100%;
+    height: auto;
 }
 
 .nav{
@@ -57,7 +60,7 @@ header{
     
 
     width: 20vw;
-    position: relative;
+   
 }
 
 h2 {
@@ -124,13 +127,15 @@ h2 {
     background-color: rgb(243,240,240);
     box-shadow: 0px 1px 2px gray;
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     justify-content: center;
 }
 
 .box-image-1{
     border:1px solid rgb(199, 196, 196);
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 15px;
     z-index: 1;
 }
@@ -219,6 +224,12 @@ h2 {
     position:relative;
     border-radius: 15px;
     margin: 7px;
+}
+
+.box-1 img {
+    width: auto;
+    height:auto;
+    object-fit: cover;
 }
 
 .images{
@@ -434,26 +445,31 @@ h2 {
 }
 
 .explore-heading{
-    font-size:3rem;
+    font-size:2rem;
     font-weight: 500;
     margin: 0 0 2rem;
     color: rgb(54,54,54);
+    font-family:"Okra, Helvetica, sans-serif";
+    margin-left: 10px;
 }
 
 .explore-list{
     display: flex;
     flex-direction: column;
-     
+    margin-left: 10px; 
 }
 
 .explore-1{
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(25,25,25);
+    border: 1px solid rgb(192, 188, 188);
     margin-bottom: 2rem;
     padding: 1rem 1.4rem;
     border-radius: 1rem;
     cursor: pointer;
+    height: 70px;
+    width:1290px;
+    text-align: center;
 }
 
 .explore-container {
@@ -536,7 +552,7 @@ h2 {
   }
 
 footer{
-    width: 100%;
+ width: 100%;
   background-color: rgb(248, 248, 248);
   display: flex;
   align-items: center;
@@ -574,12 +590,13 @@ footer{
     display: flex;
     flex-direction: row;
     margin: 10px;
+    margin-right: 10px;
 }
 
 .dropdown{
-    min-width: 10rem;
-  width: max-content;
-  max-width: 100%;
+   
+  width: 250px;
+  height: 50px;
   cursor: pointer;
   position: relative;
   padding: 0.3rem 0.7rem;
@@ -595,8 +612,8 @@ footer{
 }
 
 .flag{
-    height: 3rem;
-    width: auto;
+    height: 30px;
+    width: 30px;
 }
 
 .top-section .row {
@@ -695,7 +712,7 @@ footer{
     align-items: center;
 }
   
-.horizontal-line{
+.horizontal-line {
     margin-top: 2px;
     border-top: solid 1px black;
     display: block;
